@@ -10,16 +10,25 @@ int main(void){
     // *pointer 告訴程式，這是一個變數位址，並去找對應的變數位址的值
     // *&b 和 b 是等價的
     printf("var b value:%d\n", b);
-    printf("var b value:%p\n", &b);
-    printf("pointer value:%p\n", pointer);
+    printf("var b address:%p\n", &b);
+    printf("var pointer value:%p\n", pointer);
     printf("\n"); //換行
     
     *pointer = 100;
-    printf("*pointer value:%d\n", *pointer);
+    printf("*pointer point value:%d\n", *pointer);
     printf("var b value:%d\n", b);
-    printf("var pointer address:%p\n", pointer);
     printf("var b address:%p\n", &b);
+    printf("var pointer value:%p\n", pointer);
+    //pointer 會和 &b(b address)一樣
+    //*pointer  和 b 一樣
 
+    int** pointer2 = &pointer;
+    printf("var **pointer2 double point value:%d\n", **pointer2);
+    //**pointer2 是雙重指標
+    // pointer2 會和 pointer address一樣
+    //*pointer2 會和 pointer 以及 &b一樣
+    //**pointer2 和 *pointer 以及 b 一樣
+    
  return 0;
 
 }
