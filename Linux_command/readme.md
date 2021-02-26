@@ -27,3 +27,21 @@
 - i
 - p
 ## cat /etc/os-release 也等於 lsb_release (for linux information)
+## whoami
+## tar
+- c：建立壓縮檔案（create）。
+- t :查看壓縮檔案
+- v：輸出處理的檔案列表（verbose）。
+- f：指定壓縮檔案（archive file）。
+- tar -cvf new_file.tar folder_name/
+- tar -tvf new_file.tar
+- tar -tvf new_file.tar | grep file_name_keyword
+## zip
+- zip filename data/*
+- zip -r filename data/*
+## unzip
+- unzip filename.zip
+- unzip filename.zip 1.pdf
+- unzip filename.zip -d ./other_position
+- unzip -l filename.zip
+## diff(以及cmp,comm  3種都不常用)
