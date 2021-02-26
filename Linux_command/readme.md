@@ -1,5 +1,6 @@
 ## ls
 - ls -l
+## pwd
 ## mkdir
 ## touch
 ## cat
@@ -60,8 +61,20 @@
 ## chown
 - chown (owner) filename
 - chown :(group) filename
-## ifconfig
+## ifconfig/iwconfig
 ## wget
+- wget url
+- wget -o new_filename url
+- wget -i url.txt
 ## ufw
+- sudo ufw enable 啟動ufw
+- sudo ufw allow 80 # 允許 80
+- sudo ufw allow ssh #ssh 是22 port
+- sudo ufw deny 21 # 封鎖 21
+- sudo ufw allow from 192.168.11.10 # 允許 192.168.11.10 的所有連線
+- sudo ufw status numbered # 查看規則所對應的編號
+- sudo ufw delete 2 # 根據規則編號 去做刪除
 ## iptables
-
+## apt
+## yum
+## rpm
