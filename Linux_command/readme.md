@@ -45,3 +45,23 @@
 - unzip filename.zip -d ./other_position
 - unzip -l filename.zip
 ## diff(以及cmp,comm  3種都不常用)
+## service
+- service --status-all
+- service service_name status
+- service start/stop
+## ps
+## kill
+- kill (PID)
+- kill -9 (PID) 強制終止
+- killall program_name
+## df
+## mount/unmount
+## chmod
+## chown
+- chown (owner) filename
+- chown :(group) filename
+## ifconfig
+## wget
+## ufw
+## iptables
+
