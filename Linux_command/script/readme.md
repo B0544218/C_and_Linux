@@ -1,4 +1,4 @@
-## Vim (~/.vim/colors   /etc/vim/vimrc) 
+## Vim (1. ~/.vim/colors  2. 自己新增的 ~/.vimrc     3. 預設的 /etc/vim/vimrc) 
 - vim
 -  0. press ESC
    1. :q
