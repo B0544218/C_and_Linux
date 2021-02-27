@@ -89,4 +89,10 @@
 - alias 別名="指令"
 - alias-p # 列出所有的名稱及其對應的值。
 - unalias 別名 # 刪除別名
-## dd
+## which 
+- which (command) # 在PATH 變量指定的路徑中搜索 可直接執行的檔案所在位置
+## whereis
+- whereis (command) # 在PATH 變量指定的路徑中搜索 檔案所在位置
+## locate
+- locate (file_name) 
+## passwd (change user password)
