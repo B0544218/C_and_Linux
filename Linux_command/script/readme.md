@@ -5,3 +5,4 @@
    2. :w
    3. :q!
    4. :wq 
+ - vundle 管理 安裝plugin
