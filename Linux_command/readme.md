@@ -12,6 +12,9 @@
 ## cp
 - cp ./file.txt ./new_file.txt
 ## rm
+- rm (file)
+- rm -d (empty dirctory)
+- rm -r (non-empty dirctory)
 ## mv
 ## clear
 ## echo
