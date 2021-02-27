@@ -62,18 +62,18 @@
 ## df
 ## mount/unmount
 ## chmod   更改檔案的權限
--  chmod ugo+rwx file   (等於chmod a+rwx file)
--  chmod go-rwx file
--  chmod a=rwx file
--  chmod 777 file  (r=4，w=2，x=1, chmod abc file)
+-  chmod ugo+rwx (file)   (等於chmod a+rwx file)
+-  chmod go-rwx (file)
+-  chmod a=rwx (file)
+-  chmod 777 (file)  (r=4，w=2，x=1, chmod abc file)
 ## chown   更改某個檔案或目錄的擁有者
 - chown (owner) (filename)
 - chown :(group) (filename)
 ## ifconfig/iwconfig
 ## wget
-- wget url
-- wget -o (new_filename) url
-- wget -i url.txt
+- wget (url)
+- wget -o (new_filename) (url)
+- wget -i (url.txt)
 ## ufw
 - sudo ufw enable 啟動ufw
 - sudo ufw allow (80) # 允許 80
