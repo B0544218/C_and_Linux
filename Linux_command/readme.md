@@ -50,8 +50,11 @@
 - service --status-all
 - service service_name status
 - service start/stop
-## top
-## ps
+## top  工作管理員
+## ps 觀察行程(Process)
+- ps
+- ps -A
+- ps -au
 ## kill
 - kill (PID)
 - kill -9 (PID) 強制終止
