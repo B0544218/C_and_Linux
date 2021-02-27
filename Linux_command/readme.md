@@ -50,6 +50,7 @@
 - service --status-all
 - service service_name status
 - service start/stop
+## top
 ## ps
 ## kill
 - kill (PID)
@@ -57,8 +58,12 @@
 - killall (program_name)
 ## df
 ## mount/unmount
-## chmod
-## chown
+## chmod   更改檔案的權限
+-  chmod ugo+rwx file   (等於chmod a+rwx file)
+-  chmod go-rwx file
+-  chmod a=rwx file
+-  chmod 777 file  (r=4，w=2，x=1, chmod abc file)
+## chown   更改某個檔案或目錄的擁有者
 - chown (owner) (filename)
 - chown :(group) (filename)
 ## ifconfig/iwconfig
