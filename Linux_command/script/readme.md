@@ -18,25 +18,25 @@
     6. :PlugInstall
 
 ## 在script裡注意事項
-- 計算時要用括號 ((var=a+b))
-- 設定變數時中間不能有空格 var=123
+- 設定變數時中間不能有空格 a=1  b=2
 - 取出變數值時要用$
+- 計算時要用括號 ((var=$a+$b))
 - 條件敘述用 (中括號不能連著變數/數值 要空格)
    ```
-   if [ a -eq b ];then
+   if [ $a -eq $b ];then
       ...
-   elif [ a -gt b ];then
+   elif [ $a -gt $b ];then
       ...
    else
       ...
    fi
    ```
-- 傳遞參數 (command執行 bash file "parameter1" "parameter2")
+- 傳遞參數 (command執行: bash file "parameter1" "parameter2")
    ```
    array=("$@")
    echo "all parameter" $@
    echo "array[0]: " ${array[0]}
    echo "array[1]: " ${array[1]}
-   echo $1
-   echo $2
+   echo "array[0]: " $1
+   echo "array[1]: " $2
    ```
