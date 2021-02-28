@@ -37,4 +37,6 @@
    echo "all parameter" $@
    echo "array[0]: " ${array[0]}
    echo "array[1]: " ${array[1]}
+   echo $1
+   echo $2
    ```
