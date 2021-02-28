@@ -9,3 +9,9 @@
    6. :PlugInstall
  - vundle 管理 安裝plugin
  - fisa-vim-config (目前使用的plugin套裝)
+ -  1. sudo apt-get install curl vim exuberant-ctags git ack-grep
+    2. sudo pip install pep8 flake8 pyflakes isort yapf (如果只有安裝pip3，pip記得改成pip3)
+    3. wget https://raw.githubusercontent.com/fisadev/fisa-vim-config/v12.0.1/config.vim  (並將他檔名改成.vimrc 放在~底下)
+    4. :PlugInstall
+
+
