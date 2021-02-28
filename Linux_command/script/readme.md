@@ -17,4 +17,17 @@
     4. pip3 install neovim (不安裝 下一步會報錯誤)
     6. :PlugInstall
 
-
+## 在script裡注意事項
+- 計算時要用括號 ((var=a+b))
+- 設定變數時中間不能有空格 var=123
+- 取出變數值時要用$
+- 條件敘述用 (中括號不能連著變數/數值 要空格)
+   ```
+   if [ a -eq b ];then
+      ...
+   elif [ a -gt b ];then
+      ...
+   else
+      ...
+   fi
+   ```
