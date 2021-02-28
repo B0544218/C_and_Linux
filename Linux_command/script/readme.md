@@ -31,3 +31,10 @@
       ...
    fi
    ```
+- 傳遞參數 (command執行 bash file "parameter1" "parameter2")
+   ```
+   array=("$@")
+   echo "all parameter" $@
+   echo "array[0]: " ${array[0]}
+   echo "array[1]: " ${array[1]}
+   ```
