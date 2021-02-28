@@ -33,15 +33,6 @@
       ...
    fi
    ```
-- 傳遞參數 (command執行: bash file "parameter1" "parameter2")
-   ```
-   array=("$@")
-   echo "all parameter" $@
-   echo "array[0]: " ${array[0]}
-   echo "array[1]: " ${array[1]}
-   echo "array[0]: " $1
-   echo "array[1]: " $2
-   ```
 - Loop ( while[]/for(())  do ...done )
 ```
 valid=1
@@ -80,3 +71,14 @@ else
     echo "need number range between 10 to 50"
 fi
 ```
+- 傳遞參數 (command執行: bash file "parameter1" "parameter2")
+   ```
+   array=("$@")
+   echo "all parameter" $@
+   echo "array[0]: " ${array[0]}
+   echo "array[1]: " ${array[1]}
+   echo "array[0]: " $1
+   echo "array[1]: " $2
+   ```
+- 傳遞參數 with name
+  
