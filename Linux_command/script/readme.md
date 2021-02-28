@@ -42,3 +42,22 @@
    echo "array[0]: " $1
    echo "array[1]: " $2
    ```
+- loop ( while[]/for(())  do ...done )
+```
+valid=1
+count=1 
+while [ $valid ]
+do
+    echo $count
+    if [ $count -ge 5 ];
+    then
+        break
+    fi  
+    ((count++))
+done
+
+for ((counter=6; counter<=10; counter++))
+do
+    echo "$counter"
+done
+```
