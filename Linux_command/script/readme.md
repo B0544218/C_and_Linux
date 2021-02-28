@@ -16,7 +16,9 @@
     3. wget https://raw.githubusercontent.com/fisadev/fisa-vim-config/v12.0.1/config.vim  (並將他檔名改成.vimrc 放在~底下)
     4. pip3 install neovim (不安裝 下一步會報錯誤)
     6. :PlugInstall
-
+## 多行註解
+- 新增註解 (ESC > Ctrl+V > 向下鍵 > (大寫)I > (註解符號)# > ESC)
+- 多行刪除 (ESC > Ctrl+V > 向上下左右 > Delete
 ## 在script裡注意事項
 - 設定變數時中間不能有空格 a=1  b=2
 - 取出變數值時要用$
