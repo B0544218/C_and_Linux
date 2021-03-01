@@ -52,7 +52,7 @@ do
     echo "$counter"
 done
 ```
-- read / and or / case
+- read / and or / case  ( read使用時要小心，在((...))裡面，它的變數不用加上$，但其他狀況下要加上$ )
 ```
 echo "Enter number"
 read num 
