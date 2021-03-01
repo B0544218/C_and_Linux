@@ -22,7 +22,8 @@
 ## 在script裡注意事項
 - 設定變數時中間不能有空格 a=1  b=2
 - 取出變數值時要用$
-- 計算時要用括號 ((var=$a+$b))
+- 計算方式(1)  ((var=$a+$b)) # 在script中這個不常用，備註:碰到read時會有問題
+- 計算方式(2)  var=$(($a+$b))
 - 條件敘述用 (中括號不能連著變數/數值 要空格)
    ```
    if [ $a -eq $b ];then
@@ -52,7 +53,7 @@ do
     echo "$counter"
 done
 ```
-- read / and or / case  ( read使用時要小心，在((...))裡面，它的變數不用加上$，但其他狀況下要加上$ )
+- read / and or / case  
 ```
 echo "Enter number"
 read num 
