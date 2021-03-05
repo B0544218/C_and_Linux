@@ -1,9 +1,13 @@
 ## 安裝Docker
+- DockerHub上面建立帳戶  (並在terminal上輸入 docker login) 
 - sudo apt-get install docker.io
 - service docker status
-- docker version (第一次應該會有錯誤，輸入玩usermod -aG docker後就不會有錯誤)
+- sudo groupadd docker (建立 docker 群組 ，預設可能已經建立好)
 - sudo usermod -G docker -a (帳號)   (有哪些帳號 用cat /etc/passwd 去看)
-- DockerHub上面建立帳戶  (並在terminal上輸入 docker login) 
+- newgrp docker (更新docker group資訊)
+- groups (查看docker group)
+- sudo systemctl restart docker (重新啟動docker服務)
+
 ## Dockerfile
 Dockerfile 主要有用到的指令說明如下
 - FROM： 使用到的 Docker Image 名稱，今天使用 CentOS
