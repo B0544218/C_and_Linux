@@ -2,7 +2,7 @@
 - sudo apt-get install docker.io
 - service docker status
 - docker version (第一次應該會有錯誤，輸入玩usermod -aG docker後就不會有錯誤)
-- sudo usermod -aG docker $USER
+- sudo usermod -G docker -a (帳號)   (有哪些帳號 用cat /etc/passwd 去看)
 - DockerHub上面建立帳戶  (並在terminal上輸入 docker login) 
 ## Dockerfile
 Dockerfile 主要有用到的指令說明如下
