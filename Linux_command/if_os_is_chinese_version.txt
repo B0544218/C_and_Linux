@@ -1,5 +1,5 @@
-修改
-vim ~/.config/user-dirs.dirs
+
+sudo gedit user-dirs.dirs 
 
 XDG_DESKTOP_DIR="$HOME/Desktop"
 XDG_DOWNLOAD_DIR="$HOME/Downloads"
@@ -10,8 +10,15 @@ XDG_MUSIC_DIR="$HOME/Music"
 XDG_PICTURES_DIR="$HOME/Pictures"
 XDG_VIDEOS_DIR="$HOME/Videos"
 
+mkdir Desktop
+mkdir Downloads ....依此類推
 
 在terminal下輸入
 export LANG=en_US  將語系變更成英文
-
 xdg-user-dirs-gtk-update  xdg-user-dirs-gtk-update
+
+
+reboot (重啟)
+
+
+
