@@ -9,13 +9,13 @@
    6. :PlugClean 
    7. :PlugInstall
    8. :PlugUpdate
- - vundle 管理 安裝plugin
+ #### vundle 是管理/安裝plugin的工具
  - fisa-vim-config (目前使用的plugin套裝)
- -  1. sudo apt-get install curl vim exuberant-ctags git ack-grep
+ -  1. sudo apt-get install curl vim exuberant-ctags git ack-grep  
     2. sudo pip install pep8 flake8 pyflakes isort yapf (如果只有安裝pip3，pip記得改成pip3)
     3. wget https://raw.githubusercontent.com/fisadev/fisa-vim-config/v12.0.1/config.vim  (並將他檔名改成.vimrc 放在~底下)
     4. pip3 install neovim (不安裝 下一步會報錯誤)
-    6. :PlugInstall
+    6. :PlugInstall (第一次執行vim就直接輸入vim就好)
 ## 多行註解
 - 新增註解 (ESC > Ctrl+V > 向下鍵 > (大寫)I > (註解符號)# > ESC)
 - 多行刪除 (ESC > Ctrl+V > 向上下左右 > Delete
