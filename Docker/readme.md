@@ -21,6 +21,72 @@ Dockerfile 主要有用到的指令說明如下
 - ENV： 用來設定環境變數
 
 - CMD： 在指行 docker run 的指令時會直接呼叫開啟 Tomcat Service
+#### 假設已經安裝好 node 和 npm
+- package.json
+```
+{
+  "name": "docker_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "First Last <first.last@example.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
+```
+- server.js
+```
+const express = require('express');
+
+// Constants
+const PORT = 8080;
+const HOST = '0.0.0.0';
+
+// App
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
+```
+- create Dockerfile
+```
+vim Dockerfile
+
+FROM node:14
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
+
+RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
+
+# Bundle app source
+COPY . .
+
+EXPOSE 8080
+CMD [ "node", "server.js" ]
+```
+- create .dockerignore
+```
+node_modules
+npm-debug.log
+```
+- docker build -t <your Dockerhub username>/node-web-app .
+
+
 ## Docker command
 - docker images  查看目前image 有哪些
 - docker ps  查看目前執行的container
