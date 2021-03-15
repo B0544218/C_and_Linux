@@ -1,3 +1,7 @@
+# 在window上 看virtualbox的虛擬機
+- cd ..../Program Files/Oracle/VirtualBox/vboxmanage list vms # 找虛擬機名字
+- vboxmanage showvminfo 虛擬機名字
+- vboxmanage.exe modifyvm 虛擬機名字 --memory 1024  #設定memory為1024
 ## ls
 - ls -l
 ## pwd
