@@ -12,8 +12,10 @@
 - sudo sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elastic-7.x.list'
 - sudo apt update
 - sudo apt install elasticsearch
+- systemctl enable elasticsearch
 - systemctl start elasticsearch
 - systemctl status elasticsearch
+- firewall-cmd --add-service=elasticsearch --permanent  # 增加防火牆規則
 - curl "http://localhost:9200/_cat/nodes"
  
 ## scp
