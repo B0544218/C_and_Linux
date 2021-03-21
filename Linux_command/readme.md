@@ -2,6 +2,10 @@
 - cd ..../Program Files/Oracle/VirtualBox/vboxmanage list vms # 找虛擬機名字
 - vboxmanage showvminfo 虛擬機名字
 - vboxmanage.exe modifyvm 虛擬機名字 --memory 1024  #設定memory為1024
+## 得到jre路徑
+- which java
+- ls -l /usr/bin/java
+- ls -l /etc/alternatives/java
 ## scp
 - scp [帳號@來源主機]:來源檔案 [帳號@目的主機]:目的檔案
 - scp /path/file1 myuser@192.168.0.1:/path/file2
