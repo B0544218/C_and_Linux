@@ -3,9 +3,19 @@
 - vboxmanage showvminfo 虛擬機名字
 - vboxmanage.exe modifyvm 虛擬機名字 --memory 1024  #設定memory為1024
 ## 得到jre路徑
+- sudo apt-get install default-jre (下載jre)
 - which java
 - ls -l /usr/bin/java
 - ls -l /etc/alternatives/java
+## 安裝elasticsearch
+- wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+- sudo sh -c 'echo "deb https://artifacts.elastic.co/packages/7.x/apt stable main" > /etc/apt/sources.list.d/elastic-7.x.list'
+- sudo apt update
+- sudo apt install elasticsearch
+- systemctl start elasticsearch
+- systemctl status elasticsearch
+- curl "http://localhost:9200/_cat/nodes"
+ 
 ## scp
 - scp [帳號@來源主機]:來源檔案 [帳號@目的主機]:目的檔案
 - scp /path/file1 myuser@192.168.0.1:/path/file2
