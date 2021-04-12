@@ -6,6 +6,8 @@
 ### 設定vm的容量 ( https://medium.com/@newpage0720/%E5%9C%A8virtualbox%E5%85%A7%E7%9A%84ubuntu%E8%99%9B%E6%93%AC%E6%A9%9F-%E5%9B%BA%E5%AE%9A%E5%AE%B9%E9%87%8F%E7%A1%AC%E7%A2%9F%E8%BD%89%E5%8B%95%E6%85%8B%E9%85%8D%E7%BD%AE%E7%A1%AC%E7%A2%9F-%E8%88%87%E6%93%B4%E5%85%85%E7%A1%AC%E7%A2%9F%E7%A9%BA%E9%96%93-6efe6b1abcb3 )
 - step1: VBoxManage list hdds (找對應的UUID)
 - step2: VBoxManage modifyhd (填入對應的UUID) --resize 30720
+# 回到Ubuntu下載 gparted (sudo apt-get install gparted) 
+
 ## 得到jre路徑
 - sudo apt-get install default-jre (下載jre)
 - which java
