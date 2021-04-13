@@ -55,11 +55,11 @@ app.get('/', (req, res) => {
 app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 ```
-- create Dockerfile
+- create Dockerfile (vim Dockerfile)
 ```
-vim Dockerfile
 
-FROM node:14
+
+FROM node:latest
 
 # Create app directory
 WORKDIR /usr/src/app
