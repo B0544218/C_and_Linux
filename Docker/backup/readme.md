@@ -1,3 +1,4 @@
+# backup資料 https://drive.google.com/drive/folders/1KppSgKpDk_YLZUymY4aU640Di7DP-4_5?usp=sharing
 ## backup資料包含 keyboard、vim、pyhon、npm、docker
 ### backup完後還要再安裝相關套件
 ```
