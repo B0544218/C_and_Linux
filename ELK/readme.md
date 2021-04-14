@@ -42,6 +42,7 @@ sudo systemctl status logstash
 # Elasticsearch 基本知識
 - (上傳JSON檔給elasticsearch) curl -X POST -H "Content-Type: application/json" 'localhost:9200/_bulk?pretty' --data-binary  @/home/kevin/shakespeare_6.0.json
 - (查看elasticsearch上所有index) http://localhost:9200/_cat/indices?v
-- (查看一筆record) localhost:9200/(index) / (type e.g. -> _doc) / (id)
-- (查看多筆record) 需用到elasticsearch api
+- (列出幾筆資料) localhost:9200/_search
+- (查看一筆record) http://127.0.0.1:9200/(index) / (type) / (id)   -> (ex: http://127.0.0.1:9200/shakespeare/_doc/1 )
+- (查看多筆record) http://127.0.0.1:9200/shakespeare/_search?q=type:l*&sort=line_id&from=0&size=20
 
