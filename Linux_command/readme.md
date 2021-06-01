@@ -55,6 +55,7 @@
 - grep (keyword) /etc/os-release (os-release是個檔案 輸出符合關鍵字的內容)
 - grep (keyword) /etc/*.conf (*.conf 是多個檔案 輸出符合關鍵字的內容)
 - ls /etc/ | grep (keyword) (輸出符合關鍵字的檔名)
+## | wc (算輸出的行數)
 ## man (mannual)
 - man (command)
 ## uname (for linux kernel)
