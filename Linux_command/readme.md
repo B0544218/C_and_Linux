@@ -30,7 +30,7 @@
 - scp myuser@192.168.0.1:/path/file2 /path/file1
 
 ## ls
-- ls -l
+- ls -l (文件權限 文件和硬鏈接或者目錄子目錄個數 文件所有者 文件所有者的組名 文件的大小 時間..)
 ## pwd
 ## mkdir
 ## touch
