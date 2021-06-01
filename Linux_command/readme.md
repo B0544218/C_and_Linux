@@ -58,11 +58,11 @@
 ## man (mannual)
 - man (command)
 ## uname (for linux kernel)
-- a
-- o
-- v
-- i
-- p
+- -a (系統名稱 機器名稱 內核版本 #內核運行於哪個linux上及發行日 電腦類型 處理器類型 硬件平台類型 操作系統名稱)
+- -o
+- -v
+- -i
+- -p
 ## cat /etc/os-release 也等於 lsb_release (for linux information)
 ## whoami
 ## tar
