@@ -87,6 +87,12 @@
 - service service_name status
 - service start/stop
 ## top  工作管理員
+- 第一行 : 當前系統時間 已經運行多久 當前有多少用戶登錄系統
+- 第三行 : us(用戶空間占用CPU的百分比) sy(內核空間占用CPU的百分比)id(空閒CPU百分比)wa(IO等待占用CPU的百分比)si(Software Interrupts占用CPU的百分比)
+- 第四行 : total(內存總量)used(使用中的內存總量)free(空閒內存總量)buffers(緩存的內存量)
+- 第六行是空行
+- 第七行 : PID(進程id) USER(進程所有者)PR(進程優先級)NI(負值表示高優先級，正值表示低優先級)VIRT(進程使用的虛擬內存總量)RES(進程使用的、未被換出的物理內存大小)
+- 第七行 : SHR(共享內存大小)S(進程狀態  R=運行 S=睡眠 T=跟蹤/停止 Z=殭屍進程) COMMAND(進程名稱 命令名/命令行）
 ## ps 觀察行程(Process)
 - ps
 - ps -A
