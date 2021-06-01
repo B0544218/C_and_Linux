@@ -115,7 +115,6 @@
 ## wget
 - wget (url)
 - wget -o (new_filename) (url)
-- wget -i (url.txt)
 ## ufw
 - sudo ufw enable 啟動ufw
 - sudo ufw allow (80) # 允許 80
