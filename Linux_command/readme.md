@@ -31,7 +31,6 @@
 
 ## ls
 - ls -l (文件權限 文件和硬鏈接或者目錄子目錄個數 文件所有者 文件所有者的組名 文件的大小 時間..)
-## pwd
 ## mkdir
 ## touch
 ## cat
@@ -49,13 +48,10 @@
 - rm -d (empty dirctory)
 - rm -r (non-empty dirctory)
 ## mv
-## clear
-## echo
 ## grep
 - grep (keyword) /etc/os-release (os-release是個檔案 輸出符合關鍵字的內容)
 - grep (keyword) /etc/*.conf (*.conf 是多個檔案 輸出符合關鍵字的內容)
 - ls /etc/ | grep (keyword) (輸出符合關鍵字的檔名)
-## | wc (算輸出的行數)
 ## man (mannual)
 - man (command)
 ## uname (for linux kernel)
@@ -64,8 +60,6 @@
 - -v
 - -i
 - -p
-## cat /etc/os-release 也等於 lsb_release (for linux information)
-## whoami
 ## tar
 - c：建立壓縮檔案（create）。
 - t :查看壓縮檔案
@@ -82,7 +76,6 @@
 - unzip (filename.zip) 1.pdf
 - unzip (filename.zip) -d ./other_position
 - unzip -l (filename.zip)
-## diff(以及cmp,comm  3種都不常用)
 ## service
 - service --status-all
 - service service_name status
@@ -102,7 +95,6 @@
 - kill (PID)
 - kill -9 (PID) 強制終止
 - killall (program_name)
-## df
 ## mount/unmount
 ## chmod   更改檔案的權限
 -  chmod ugo+rwx (file)   (等於chmod a+rwx file)
@@ -112,7 +104,6 @@
 ## chown   更改某個檔案或目錄的擁有者
 - chown (owner) (filename)
 - chown :(group) (filename)
-## ifconfig/iwconfig
 ## wget
 - wget (url)
 - wget -o (new_filename) (url)
@@ -124,7 +115,6 @@
 - sudo ufw allow from (192.168.11.10) # 允許 192.168.11.10 的所有連線
 - sudo ufw status numbered # 查看規則所對應的編號
 - sudo ufw delete (2) # 根據規則編號 去做刪除
-## iptables
 ## apt
 - apt-get install (package)
 - apt-get remove (package) # Keep configuration file
@@ -145,4 +135,14 @@
 - whereis (command) # 在PATH 變量指定的路徑中搜索 檔案所在位置
 ## locate
 - locate (file_name) 
+## | wc (算輸出的行數 字數)
+## df
+## ifconfig/iwconfig
+## pwd
 ## passwd (change user password)
+## cat /etc/os-release 也等於 lsb_release (for linux information)
+## echo
+## clear
+## whoami
+## iptables
+## diff(以及cmp,comm  3種都不常用)
