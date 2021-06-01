@@ -95,8 +95,8 @@
 - 第七行 : SHR(共享內存大小)S(進程狀態  R=運行 S=睡眠 T=跟蹤/停止 Z=殭屍進程) COMMAND(進程名稱 命令名/命令行）
 ## ps 觀察行程(Process)
 - ps
-- ps -A
-- ps -au
+- ps -e   列出所有行程
+- ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head   列出所有行程的指定欄位 根據cpu使用率做排序並取前幾個
 ## kill
 - kill (PID)
 - kill -9 (PID) 強制終止
