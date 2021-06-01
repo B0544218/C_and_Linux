@@ -74,8 +74,8 @@
 - tar -tvf new_file.tar
 - tar -tvf new_file.tar | grep (file_name_keyword)
 ## zip
-- zip (filename) data/*
-- zip -r (filename) data/*
+- zip (new_filename) (./data)  
+- zip (new_filename) (./*) 全部資料
 ## unzip
 - unzip (filename.zip)
 - unzip (filename.zip) 1.pdf
