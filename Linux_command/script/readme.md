@@ -4,12 +4,12 @@
    2.  自己新增的 ~/.vimrc  (不常用) 
    3.  預設的 /etc/vim/vimrc 
 - vim
-  0. press ESC
-         1. :q
-         2. :w
-         3. :q!
-         4. :wq 
-         5. :version
+  - press ESC
+      1. :q
+       2. :w
+       3. :q!
+       4. :wq 
+       5. :version
          6. :PlugClean 
          7. :PlugInstall
          8. :PlugUpdate
