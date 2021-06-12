@@ -3,7 +3,7 @@
 ```
    1.  sudo chmod 777 /etc/vim/vimrc (可以修改 vimrc，記得先用chmod)
    2.  git clone https://github.com/VundleVim/Vundle.vim.git  ~/.vim/bundle/Vundle.vim  (系統幫忙新增~/.vim/bundle)
-   3.  wget https://raw.githubusercontent.com/B0544218/C_and_Linux/main/Linux_command/script/vundle_config.txt -o ~/Desktop/vundle_config.txt
+   3.  wget -O ~/Desktop/vundle_config.txt https://raw.githubusercontent.com/B0544218/C_and_Linux/main/Linux_command/script/vundle_config.txt 
    4.  
    5.  在command line 輸入 vim +PluginInstall +qall
 ```
