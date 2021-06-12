@@ -6,13 +6,13 @@
 - vim
   - press ESC
       1. :q
-       2. :w
-       3. :q!
-       4. :wq 
-       5. :version
-         6. :PlugClean 
-         7. :PlugInstall
-         8. :PlugUpdate
+      2. :w
+      3. :q!
+      4. :wq 
+      5. :version
+      6. :PlugClean 
+      7. :PlugInstall
+      8. :PlugUpdate
  #### vundle 是管理/安裝plugin的工具
  - fisa-vim-config (目前使用的plugin套裝)
  -  1. sudo apt-get install curl vim exuberant-ctags git ack-grep  
