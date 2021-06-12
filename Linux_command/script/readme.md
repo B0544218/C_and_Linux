@@ -1,4 +1,8 @@
-## Vim (1. ~/.vim/colors  2. 自己新增的 ~/.vimrc     3. 預設的 /etc/vim/vimrc) 
+## Vim 
+0. 認識三種常見的vim路徑
+   1.  ~/.vim/colors  (不常用)
+   2.  自己新增的 ~/.vimrc  (不常用) 
+   3.  預設的 /etc/vim/vimrc 
 - vim
 -  0. press ESC
    1. :q
