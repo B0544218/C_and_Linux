@@ -1,45 +1,45 @@
 "
-set nocompatible              \" be iMproved, required
-filetype off                  \" required
-
-\" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-\" alternatively, pass a path where Vundle should install plugins
-\"call vundle#begin('~/some/path/here')
-
-\" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-\" The following are examples of different formats supported.
-\" Keep Plugin commands between vundle#begin/end.
-\" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-\" plugin from http://vim-scripts.org/vim/scripts.html
-\" Plugin 'L9'
-\" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-\" git repos on your local machine (i.e. when working on your own plugin)
-\"Plugin 'file:///home/gmarik/path/to/plugin'
-\" The sparkup vim script is in a subdirectory of this repo called vim.
-\" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-\" Install L9 and avoid a Naming conflict if you've already installed a
-\" different version somewhere else.
-\" Plugin 'ascenator/L9', {'name': 'newL9'}
-
-\" All of your Plugins must be added before the following line
-call vundle#end()            \" required
-filetype plugin indent on    \" required
-\" To ignore plugin indent changes, instead use:
-\"filetype plugin on
-\"
-\" Brief help
-\" :PluginList       - lists configured plugins
-\" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-\" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-\" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-\"
-\" see :h vundle for more details or wiki for FAQ
-\" Put your non-Plugin stuff after this line
+set nocompatible\n              \" be iMproved, required
+filetype off\n                  \" required
+\n
+\" set the runtime path to include Vundle and initialize\n
+set rtp+=~/.vim/bundle/Vundle.vim\n
+call vundle#begin()\n
+\" alternatively, pass a path where Vundle should install plugins\n
+\"call vundle#begin('~/some/path/here')\n
+\n
+\" let Vundle manage Vundle, required\n
+Plugin 'VundleVim/Vundle.vim'\n
+\n
+\" The following are examples of different formats supported.\n
+\" Keep Plugin commands between vundle#begin/end.\n
+\" plugin on GitHub repo\n
+Plugin 'tpope/vim-fugitive'\n
+\" plugin from http://vim-scripts.org/vim/scripts.html\n
+\" Plugin 'L9'\n
+\" Git plugin not hosted on GitHub\n
+Plugin 'git://git.wincent.com/command-t.git'\n
+\" git repos on your local machine (i.e. when working on your own plugin)\n
+\"Plugin 'file:///home/gmarik/path/to/plugin'\n
+\" The sparkup vim script is in a subdirectory of this repo called vim.\n
+\" Pass the path to set the runtimepath properly.\n
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}\n
+\" Install L9 and avoid a Naming conflict if you've already installed a\n
+\" different version somewhere else.\n
+\" Plugin 'ascenator/L9', {'name': 'newL9'}\n
+\n
+\" All of your Plugins must be added before the following line\n
+call vundle#end()            \" required\n
+filetype plugin indent on    \" required\n
+\" To ignore plugin indent changes, instead use:\n
+\"filetype plugin on\n
+\"\n
+\" Brief help\n
+\" :PluginList       - lists configured plugins\n
+\" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate\n
+\" :PluginSearch foo - searches for foo; append `!` to refresh local cache\n
+\" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal\n
+\"\n
+\" see :h vundle for more details or wiki for FAQ\n
+\" Put your non-Plugin stuff after this line\n
 "
