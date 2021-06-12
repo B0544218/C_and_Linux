@@ -1,8 +1,11 @@
 ## Vim 
 - 認識三種常見的vim路徑
    1.  ~/.vim/colors  (不常用)
-   2.  自己新增的 ~/.vimrc  (不常用) 
-   3.  預設的 /etc/vim/vimrc 
+   2.  自己新增的 ~/.vim/bundle/Vundle.vim  (不常用) 
+   3.  預設的 /etc/vim/vimrc (可以修改 vimrc，記得先用chmod)
+   ```
+     設置 https://github.com/VundleVim/Vundle.vim
+   ```
 - vim
   - press ESC
       1. :q
