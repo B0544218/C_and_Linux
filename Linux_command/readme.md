@@ -41,6 +41,8 @@
 ## tail
 - tail -1 (file)
 - tail -n +1000 打印文件第1000行开始以后的内容
+## sed (從第一行到最後一行p)
+- sed -n '1,$p' (file)
 ## cut
 - cut -d (分割符號) -f (第幾欄)  # 欄數: 
 ## cp
