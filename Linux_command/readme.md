@@ -37,6 +37,7 @@
 - cat -n (file)
 ## head
 - head -1 (file)
+- head -n 1000 打印前1000的内容
 ## tail
 - tail -1 (file)
 - tail -n +1000 打印文件第1000行开始以后的内容
