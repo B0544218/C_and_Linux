@@ -1,18 +1,18 @@
 ## Vim 
-0. 認識三種常見的vim路徑
+- 認識三種常見的vim路徑
    1.  ~/.vim/colors  (不常用)
    2.  自己新增的 ~/.vimrc  (不常用) 
    3.  預設的 /etc/vim/vimrc 
 - vim
--  0. press ESC
-   1. :q
-   2. :w
-   3. :q!
-   4. :wq 
-   5. :version
-   6. :PlugClean 
-   7. :PlugInstall
-   8. :PlugUpdate
+  0. press ESC
+         1. :q
+         2. :w
+         3. :q!
+         4. :wq 
+         5. :version
+         6. :PlugClean 
+         7. :PlugInstall
+         8. :PlugUpdate
  #### vundle 是管理/安裝plugin的工具
  - fisa-vim-config (目前使用的plugin套裝)
  -  1. sudo apt-get install curl vim exuberant-ctags git ack-grep  
