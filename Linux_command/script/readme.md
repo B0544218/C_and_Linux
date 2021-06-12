@@ -1,8 +1,10 @@
 ## Vim 
 - 認識三種常見的vim路徑
    1.  ~/.vim/colors  (不常用)
-   2.  自己新增的 ~/.vim/bundle/Vundle.vim  (不常用) 
-   3.  預設的 /etc/vim/vimrc (可以修改 vimrc，記得先用chmod)
+   2.  預設的 /etc/vim/vimrc (可以修改 vimrc，記得先用chmod)
+   3.  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim  (系統幫忙新增~/.vim/bundle)
+   4.  參考下面網址 到/etc/vim的vimrc 新增新的configure plugin
+   5.  在command line 輸入 vim +PluginInstall +qall
    ```
      設置 https://github.com/VundleVim/Vundle.vim
    ```
