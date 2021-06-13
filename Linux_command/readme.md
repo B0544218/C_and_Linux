@@ -43,8 +43,8 @@
 - tail -n +1000 打印文件第1000行开始以后的内容
 ## sed (讀取從第一行到最後一行p)
 - sed -n '1,$p' (file)
-## sed (插入第二行(單行)變數內容)
-- sed '2a '"$temp" (file)
+## sed 詳細網站
+- https://terryl.in/zh/linux-sed-command/
 ## cut
 - cut -d (分割符號) -f (第幾欄)  # 欄數: 
 ## cp
