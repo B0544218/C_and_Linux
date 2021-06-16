@@ -152,3 +152,4 @@
 ## whoami
 ## iptables
 ## diff(以及cmp,comm  3種都不常用)
+## pip3 list
