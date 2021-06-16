@@ -14,3 +14,6 @@
 ### 開啟ngrok server(記得先開啟jupyter)
 - 使用cmd，切到ngrok.exe目錄下，輸入 ngrok http 5000(對應jupyter的port)
 - 輸入jupyter的password或token (使用jupyter notebook list 可以看到自己電腦的token)
+
+## Linux 請去看
+「link」（https://github.com/B0544218/C_and_Linux/blob/main/Linux_command/script/ngro.sh）
