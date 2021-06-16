@@ -141,6 +141,8 @@
 - whereis (command) # 在PATH 變量指定的路徑中搜索 檔案所在位置
 ## locate
 - locate (file_name) 
+## netstat
+- netstat -tulpn  查看port
 ## cat (file) | wc -l (算輸出的行數 字數)
 ## df
 ## ifconfig/iwconfig
