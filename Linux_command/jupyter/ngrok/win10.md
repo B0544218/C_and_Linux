@@ -1,9 +1,10 @@
-## window jupyter ngrok
+## window/Linux jupyter ngrok
 ### ngrok download
 - 到 https://dashboard.ngrok.com/get-started/setup  下載 .exe
 - 使用cmd，切到exe目錄底下，輸入 ngrok authtoken (your_Authtoken) 
 - (上述步驟等同於 在 C:\Users\kevin\.ngrok2\ngrok.yml 改寫以下指令 authtoken: your_Authtoken )
-### jupyer server setup
+
+### jupyer server setup (以window為例，linux path不太一樣)
 - jupyter notebook --generate-config
 - 在 C:\Users\kevin\.jupyter\jupyter_notebook_config.json  新增以下指令
 1. c.NotebookApp.ip = '*'
