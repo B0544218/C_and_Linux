@@ -93,6 +93,7 @@ npm-debug.log
    - docker start (服務名稱NAMES) #啟動Container
    - docker exec -it (服務名稱NAMES) bash #進入Container bash
 2. docker run (建立 Container 後並 啟動，較常用來執行一些一次性的操作) 
+   - docker run -it (服務名稱NAMES) bash (進入container bash後，可以在執行cat /etc/*release )
    - docker run -it -d -p (49160:8080) --name (命名 服務名稱NAMES) (image:tag)
    - docker exec -it (服務名稱NAMES) bash #進入Container bash
     ```
