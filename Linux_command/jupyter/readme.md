@@ -1,4 +1,4 @@
-## [參考 ](https://www.howtoing.com/how-to-set-up-jupyter-notebook-with-python-3-on-ubuntu-18-04)
+## jupyter請看 [參考 ](https://www.howtoing.com/how-to-set-up-jupyter-notebook-with-python-3-on-ubuntu-18-04)
 
 ## window/Linux jupyter ngrok
 ### ngrok download
