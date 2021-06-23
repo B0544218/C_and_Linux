@@ -50,6 +50,10 @@
 - docker ps  查看目前執行的container
 - docker ps -all 查看所有container包含status為exit的
 - docker pull (image) 到dockerhub上抓取現成的image
+- docker start (containerID) #讓container的status為up
+- docker stop (containerID) #讓container的status為exit
+- docker rm (containerID) 
+- docker rmi (image_id)
 
 ### Dockerfile 其他沒講到的常用指令
 Dockerfile 主要有用到的指令說明如下
@@ -140,7 +144,3 @@ npm-debug.log
     -d代表在背景執行
     -p <本機通道>:<容器通道>
     ```
-  - docker start (container) #讓container的status為up
-  - docker stop (服務名稱NAMES) #讓container的status為exit
-  - docker rm (服務名稱NAMES) 
-  - docker rmi (repository)
