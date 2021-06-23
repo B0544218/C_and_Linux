@@ -155,3 +155,4 @@
 ## iptables
 ## diff(以及cmp,comm  3種都不常用)
 ## pip3 list
+## sudo -i 提升用戶權限 (因此可以使用 cd ~/root)
