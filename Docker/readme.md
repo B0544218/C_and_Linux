@@ -89,7 +89,7 @@ npm-debug.log
 
 
 ## Docker command
-- docker images  查看目前image 有哪些
+- docker images或 docker image list  查看目前image 有哪些
 - docker ps  查看目前執行的container
 - docker ps -all 查看所有container包含status為exit的
 - docker pull (image) 到dockerhub上抓取現成的image
