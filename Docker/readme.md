@@ -2,7 +2,7 @@
 - DockerHub上面建立帳戶  (並在terminal上輸入 docker login) 
 - sudo apt-get install docker.io
 - service docker status
-- sudo groupadd docker (建立 docker 群組 ，預設可能已經建立好)
+- cd /etc/ 看看group檔案中有無docker， 沒有的話執行 sudo groupadd docker (建立 docker 群組)
 - sudo usermod -G docker -a (帳號)   (有哪些帳號 用cat /etc/passwd 去看)
 - newgrp docker (更新docker group資訊)
 - groups (查看docker group)
