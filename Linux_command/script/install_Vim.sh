@@ -1,4 +1,6 @@
 #!/bin/bash
+
+sudo apt-get install vim
 sudo chmod 777 /etc/vim/vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git  ~/.vim/bundle/Vundle.vim  
 wget -O ~/Desktop/vundle_config.txt https://raw.githubusercontent.com/B0544218/C_and_Linux/main/Linux_command/script/vundle_config.txt
