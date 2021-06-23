@@ -1,5 +1,4 @@
 ## 安裝Docker
-- DockerHub上面建立帳戶  (並在terminal上輸入 docker login) 
 - sudo apt-get install docker.io
 - service docker status
 - cd /etc/ 看看group檔案中有無docker(預設應該會幫你裝)， 沒有的話執行 sudo groupadd docker (建立 docker 群組)
@@ -8,6 +7,7 @@
 - sudo systemctl restart docker (重新啟動docker服務)
 - docker version (會出現 Client、Server 的訊息。 如果出現Cannot connect to the Docker daemon. 則代表前面有步驟失敗)
 - groups (查看docker group)
+- DockerHub上面建立帳戶  (並在terminal上輸入 docker login) 
 
 ## Dockerfile
 Dockerfile 主要有用到的指令說明如下
