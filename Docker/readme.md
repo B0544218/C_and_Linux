@@ -1,17 +1,59 @@
+### 初學者認識環境
+1. ubuntu為例子
+   - docker pull ubuntu
+   - docker image ls
+   - docker run -it ubuntu bash (-it 是為了讓我們進到這個 container 的 shell 下指令)
+   - cat /etc/*release
+2. 終極目標是要把你的程式碼跟想要的環境打包起來，變成一個 image (nodejs為例子)
+   - 新增 Dockerfile (git clone https://github.com/LarryLuTW/simple-express-server.git)
+   ```
+   simple-express-server
+    ├── Dockerfile   <--   這裡
+    ├── README.md
+    ├── index.js
+    ├── node_modules
+    └── package.json
+   ```
+   - 找到適合的 base image 
+   ```
+   決定base image後就在 Dockerfile 的第一行寫 
+   FROM node:9.2.0，9.2.0 指的是我們使用的 node image 版本，如果想要最新版的的話也可以指定 node:latest
+   ```
+   - copy 原始碼
+   ```
+   有了 Node.js 環境之後要把 code 也包進去，這邊使用 COPY 指令，把 index.js 跟 package.json 複製到 /app
+   ```
+   - 安裝 dependencies
+   ```
+   環境都配置好了，code 也已經在裡面了
+   使用 WORKDIR 切換到 /app 目錄，
+   再用 RUN 跑 npm install && npm cache clean --force，
+   清 npm cache 是為了讓 build 出來的 image 不要包含這些 cache，這樣 image 會小一點
+   ```
+   - 設定 initial command
+   ```
+   現在環境、程式碼、dependencies 都準備好了，只剩把程式跑起來，這裡會用到 CMD 設定這個 image 被跑起來時的預設指令
+   ```
+   - build (docker build -t simple-express-server)
+   ```
+   在專案目錄下跑 docker build -t simple-express-server . 就會根據 Dockerfile build 出你的 image
+   ```
+   - 把 image 跑起來(docker run -p 3000:8080 simple-express-server)
+   ```
+   有了 image 後可以 docker run -p 3000:8080 simple-express-server 把 image 跑起來，
+   在 container 內跑的就是剛剛設定的預設指令 node index.js，
+   -p 3000:8080 則是把 container 內的 8080 port 跟外部的 3000 port 接通，
+   如此一來只要用瀏覽器到 127.0.0.1:3000 就可以看到 Hello World!
+   ```
 
-## Dockerfile
+### Dockerfile 其他沒講到的常用指令
 Dockerfile 主要有用到的指令說明如下
-- FROM： 使用到的 Docker Image 名稱，今天使用 CentOS
-
 - MAINTAINER： 用來說明，撰寫和維護這個 Dockerfile 的人是誰，也可以給 E-mail的資訊
 
-- RUN： RUN 指令後面放 Linux 指令，用來執行安裝和設定這個 Image 需要的東西
-
-- ADD： 把 Local 的檔案複製到 Image 裡，如果是 tar.gz 檔複製進去 Image 時會順便自動解壓縮。Dockerfile 另外還有一個複製檔案的指令 COPY 未來還會再介紹
+- ADD： 把 Local 的檔案複製到 Image 裡，跟copy相比多了這個功能(如果是 tar.gz 檔複製進去 Image 時會順便自動解壓縮)
 
 - ENV： 用來設定環境變數
 
-- CMD： 在指行 docker run 的指令時會直接呼叫開啟 Tomcat Service
 #### 假設已經安裝好 node 和 npm
 - package.json
 ```
