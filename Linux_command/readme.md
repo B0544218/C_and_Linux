@@ -149,6 +149,7 @@
 ## pwd
 ## passwd (change user password)
 ## cat /etc/os-release 也等於 lsb_release (for linux information)
+## cat /etc/passwd 檢視第一個欄位 也就是所有系統帳號 (這個檔案用 :符號 來分割欄位)
 ## echo
 ## clear
 ## whoami
