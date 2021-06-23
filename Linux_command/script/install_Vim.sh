@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# 執行的時候不要使用 sudo bash install_Vim.sh，他會把~/.vim/bundle/Vundle.vim丟到/root目錄。用 bash install_Vim.sh就好
 # sudo apt-get install vim
 sudo chmod 777 /etc/vim/vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git  ~/.vim/bundle/Vundle.vim
