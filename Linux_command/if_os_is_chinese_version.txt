@@ -1,6 +1,8 @@
 
 sudo gedit user-dirs.dirs 
 
+# 在user-dirs.dirs下輸入以下內容
+```
 XDG_DESKTOP_DIR="$HOME/Desktop"
 XDG_DOWNLOAD_DIR="$HOME/Downloads"
 XDG_TEMPLATES_DIR="$HOME/Templates"
@@ -11,9 +13,17 @@ XDG_PICTURES_DIR="$HOME/Pictures"
 XDG_VIDEOS_DIR="$HOME/Videos"
 
 mkdir Desktop
-mkdir Downloads ....依此類推
+mkdir Downloads
+mkdir Templates
+mkdir Public
+mkdir Documents
+mkdir Music
+mkdir Pictures
+mkdir Videos
+```
 
-在terminal下輸入
+
+# 在terminal下輸入
 export LANG=en_US  將語系變更成英文
 xdg-user-dirs-gtk-update  xdg-user-dirs-gtk-update
 
