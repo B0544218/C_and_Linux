@@ -45,6 +45,11 @@
    -p 3000:8080 則是把 container 內的 8080 port 跟外部的 3000 port 接通，
    如此一來只要用瀏覽器到 127.0.0.1:3000 就可以看到 Hello World!
    ```
+## Docker command
+- docker images或 docker image list  查看目前image 有哪些
+- docker ps  查看目前執行的container
+- docker ps -all 查看所有container包含status為exit的
+- docker pull (image) 到dockerhub上抓取現成的image
 
 ### Dockerfile 其他沒講到的常用指令
 Dockerfile 主要有用到的指令說明如下
@@ -90,8 +95,6 @@ console.log(`Running on http://${HOST}:${PORT}`);
 ```
 - create Dockerfile (vim Dockerfile)
 ```
-
-
 FROM node:latest
 
 # Create app directory
@@ -119,12 +122,6 @@ npm-debug.log
 ```
 - docker build -t <your Dockerhub username>/node-web-app .
 
-
-## Docker command
-- docker images或 docker image list  查看目前image 有哪些
-- docker ps  查看目前執行的container
-- docker ps -all 查看所有container包含status為exit的
-- docker pull (image) 到dockerhub上抓取現成的image
 #### 假如自建一個Dockerfile (切入到這個Dockerfile的目錄)
 - docker build .   (這個build動作完成後會回覆一個image id，代表這個image建置完成。) 需要有一個Dockerhub帳戶
 - docker push (your-name/image-name) 
